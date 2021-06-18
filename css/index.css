@@ -1,0 +1,128 @@
+
+/*
+Используемые цвета:
+Черный: #1c1e21;
+Серый: #282a2e;
+Светло-серый: #d2d2d3;
+Фиолетовый: #7156f3;
+*/
+@font-face {
+	font-family: 'OpenSansRegular';
+	src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+input:-webkit-autofill {
+  transition: all 5000s ease-in-out;
+}
+
+body {
+  background: #7156f3;
+}
+
+.sendForm {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  -ms-align-items: center;
+  align-items: center;
+
+  max-width: 540px;
+
+  margin: 30px auto;
+  padding: 70px 0;
+
+  background: #1c1e21;
+  border-radius: 5px;
+}
+
+.sendForm>* {
+  margin: auto;
+}
+
+.sendForm>p {
+  max-width: 400px;
+  font-family: 'OpenSansRegular', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 45px;
+  font-size: 21px;
+  color: #fff;
+}
+
+.sendForm>.sendForm__icon {
+  position: relative;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  padding: 0 5px;
+  margin-bottom: 25px;
+}
+
+.sendForm>.sendForm__icon>input {
+  width: 400px;
+  max-width: 100%;
+
+  font-family: 'OpenSansRegular', sans-serif;
+  font-size: 18px;
+  color: #fff;
+
+  background: transparent;
+  border: 1px solid #282a2e;
+  border-radius: 5px;
+
+  padding: 15px 15px 15px 55px;
+
+  box-sizing: border-box;
+}
+
+.sendForm>.sendForm__icon>.icon_face {
+  background: url("../icons/face.png");
+}
+
+.sendForm>.sendForm__icon>.icon_telephone {
+  background: url("../icons/telephone.png");
+}
+
+.sendForm>.sendForm__icon>.icon_room {
+  background: url("../icons/room.png");
+}
+
+.sendForm>.sendForm__icon>.icon {
+    width: 35px;
+    height: 35px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.sendForm>input[type="submit"] {
+  width: 270px;
+  max-width: calc(100% - 10px);
+  height: 65px;
+
+  font-family: 'OpenSansRegular', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+
+  background: #7156f3;
+  border-radius: 50px;
+  border: 3px solid transparent;
+
+  cursor: pointer;
+
+  transition: .5s ease-in-out;
+}
+
+.sendForm>input[type="submit"]:hover {
+  background: transparent;
+  color: #7156f3;
+  border: 3px solid #7156f3;
+}

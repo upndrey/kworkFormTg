@@ -24,11 +24,31 @@ body, html {
 }
 
 .sendForm__wrapper {
-  background: #7156f3;
   width: 100%;
+
+  background: #7156f3;
+
   padding: 50px 10px;
 
+  font-family: 'OpenSansRegular', sans-serif;
+
   box-sizing: border-box;
+}
+
+.sendForm__wrapper>h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0;
+
+}
+
+.sendForm__wrapper>p {
+  width: 350px;
+
+  margin: 0 auto 10px auto;
+
+  text-align: center;
+  color: #fff;
 }
 
 .sendForm {
@@ -148,6 +168,8 @@ body, html {
   padding: 50px 10px;
 
   background: #fff;
+
+  box-sizing: border-box;
 
   -webkit-box-shadow: inset 0px 9px 9px -5px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    inset 0px 9px 9px -5px rgba(50, 50, 50, 0.75);
